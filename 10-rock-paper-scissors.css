@@ -1,0 +1,50 @@
+body{
+            background-color:rgb(25,25,25);
+            color: white;
+            font-family: Arial;
+          }
+          .css-title{
+            font-size: 30px;
+            font-weight: bold;
+          }
+          /*apply style inside <img> only*/
+          .css-icon-image{
+            height: 50px;
+    
+          }
+          /*Below  style code applied only inside the <button></button>*/
+          .css-move-button{
+            background-color: transparent;
+          /*1px is border width, solid is border style( can also 'dot or dash'), white is border color */
+          border: 3px solid white;
+
+          /*Since our element has different size we have to use height and width instead of padding*/
+          width: 120px;
+          height: 120px;
+
+          /*Take sure it matches the required rounded border must give border-radius a half of width and height value*/
+          border-radius: 60px;
+          margin-right: 10px;
+          cursor: pointer;
+
+          }
+          /*For styling result paragraph */
+          .css-result{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 50px;
+          }
+          /*Here to style score on web*/
+          .css-score{
+            margin-top: 60px;
+          }
+            /*To style reset button*/
+          .css-resetScore-button{
+            background-color: white;
+            border: none;
+            font-size: 15px;
+            padding: 8px 15px;
+            cursor: pointer;
+
+          }
+          

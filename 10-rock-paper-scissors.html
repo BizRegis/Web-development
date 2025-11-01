@@ -1,0 +1,72 @@
+
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <!--To load css file we use <link rel='' href=''> where 'rel'= relation which is 'stylesheet'  and 'href'= tells computer which file to load-->
+        <link rel="stylesheet" href="styles/10-rock-paper-scissors.css">
+    </head>
+
+    <body>
+      <!--Now we gonna replace text of button by image using '<img> html'-->
+        <p class="css-title">Rock Paper Scissors</p>
+
+
+        <button onclick="
+        playGame('Rock');
+        "  class="css-move-button"><img src="images/rock-emoji.png" class="css-icon-image"></button>
+  
+        <button onclick="
+        playGame('Paper');"  class="css-move-button"><img src="images/paper-emoji.png"  class="css-icon-image"></button>
+  
+        <button onclick="
+        playGame('Scissors');" class="css-move-button"><img src="images/scissors-emoji.png" class="css-icon-image" ></button>
+
+        <!--Create link btn html and result as paragraph in script-->
+        <p class="js-result css-result"></p>
+
+        <!--Create link btn html and move as paragraph in script-->
+        <p class="js-move">
+          <!-- This helped to test our code.
+          
+          You
+          <img src="images/rock-emoji.png" class="css-icon-image">
+          <img src="images/scissors-emoji.png" 
+            class="css-icon-image">
+          Computer
+          -->
+          
+        </p>
+        
+        <!--Create link btn html and score  as paragraph in script-->
+        <p  class="js-score css-score"></p>
+
+        <button onclick="
+        score.wins=0,
+        score.losses=0,
+        score.ties=0,
+        localStorage.removeItem('score');
+        updateScorePageElement();
+        " class="css-resetScore-button">Reset Score</button>
+
+        
+  
+        
+        
+        
+        
+  
+          <script src="scripts/10-rock-paper-scissors.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
